@@ -1,0 +1,7 @@
+@charset "utf-8";
+h1 {
+    color: red;
+}
+* {
+    border: 1px solid red;
+}/*html 모든 코드 요소 빨간 실선 테두리 1px*/

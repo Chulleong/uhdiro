@@ -1,0 +1,112 @@
+<!DOCTYPE html> <!--웹 표준 문서라고 선언-->
+<html lang="ko"> <!--문자를 한국어로-->
+<!--웹 문서에 필요한 외부 파일과 옵션을 설정하는 공간-->
+<head>
+    <meta charset="UTF-8"> <!--웹 문서의 인코딩 방식, UTF-8은 세계 표준 인코딩-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--디바이스 종류별로 화면에 출력할 방식 지정-->
+    <title>어디로 웹서비스</title><!--문서의 제목. 여기에 작성한 제목은 중상단에 표시-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/recommand-destination.css">
+    <script src="../js/sdk.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script defer src="../js/main.js"></script>
+</head>
+
+<body>
+    <div id="super-div">
+        <leftHeader><!--머리말 영역-->
+            <!--링크 등의 메뉴 영역-->
+            <nav class="navbar">
+                <nav>
+                    <div id="profile-icon"><a href=""><img src="../img/profile.png" width="100px" height="100px"></a></div>
+                    <div id="home-button"><a href="../html/main.html">홈</a></div>
+                    <div id="plan-button"><a href="../html/travel_plan.html">여행 계획</a></div>
+                    <div id="map-button"><a href="../html/travel_record.html">여행 지도</a></div>
+                    <div id="scrap-button"><a href="">스크랩</a></div>
+                </nav>
+            </nav> 
+        </leftHeader>
+    </div>
+    
+        
+    </div>
+    <div id="search-div">
+        <input type="text" id="input-tag" placeholder="검색어를 입력하세요.">
+    </div>
+    <div id="slider">
+        <a href="#" class="control_next"><img src="../img/arrow.svg"></a>
+        <a href="#" class="control_prev"><img src="../img/arrow.svg"></a>
+        <ul>
+          <li><img src="../img/busan.png" widht="1050px" id="slide-img1"></li>
+          <li><img src="../img/img1.jpg" width="1050px"></li>
+          <li><img src="../img/img2.jpeg" width="1050px"></li>
+          <li><img src="../img/img3.jpg" width="1050px"></li>
+        </ul>  
+      </div>
+      
+      <div class="slider_option">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">Autoplay Slider</label>
+      </div>
+    </div>
+    <script defer src="test.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="../js/slider.js"></script>
+    <main>
+        <div id="kakao-map">
+            <div id="map" style="width:440px;height:630px;"></div>
+        </div>
+        <section>
+            <h3 class="article-text">000님의 추천 여행지</h3>
+            <div class="middle-div">
+                <article>
+                    <div class="articles">
+                        <img src="../img/test.png" alt="">
+                        <h2>경복궁</h2>
+                        <p>ㅁㅇㄴㄹㄴㅇㄹㄴㅁㅇㄹㄴㅁㅇㄹ</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="articles">
+                        <img src="../img/test.png" alt="">
+                        <h2>Eaque, quibusdam similique!</h2>
+                        <p>Aliquam, a sequi mollitia iusto ipsum quo?</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="articles">
+                        <img src="../img/test.png" alt="">
+                        <h2>Doloribus, </h2>
+                        <p>Consequuntur dolor a dicta laborum..</p>
+                    </div>
+                </article>
+            </div>
+            <h3 class="article-text">best 추천 여행지</h3>
+            <div class="middle-div">
+                <article>
+                    <div class="articles">
+                        <img src="../img/test.png" alt="">
+                        <h2>Ullam, qui autem!</h2>
+                        <p>At nostrum reiciendis deserunt aliquid culpa minus!</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="articles">
+                        <img src="../img/test.png" alt="">
+                        <h2>Dolorem, libero aspernatur.</h2>
+                        <p>Provident dicta a animi! Praesentium, molestiae natus.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="articles">
+                        <img src="../img/test.png" alt="">
+                        <h2>Tempore, reiciendis eveniet.</h2>
+                        <p>Velit molestiae molestias natus sequi, eos inventore?</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

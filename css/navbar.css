@@ -1,0 +1,57 @@
+leftHeader ul li{
+    margin: 0px;
+    padding: 20px;
+}
+
+leftHeader nav {
+    position : fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:120px;
+    font-weight: 800;
+    --text-color: #FFFFFF;
+}
+
+leftHeader nav a {
+    text-decoration: none;
+    font-size:22px;
+    color: var(--text-color);
+}
+
+leftHeader a:hover{
+    color: #9f9
+}
+  
+leftHeader .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #A6CBF5, #AACCFF);
+    padding: 8px 12px;
+}
+
+#profile-icon{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#home-button{
+    margin-top: 130px;
+    margin-left: 60px;
+}
+
+#plan-button{
+    margin-top: 100px;
+    margin-left: 27px;
+}
+
+#map-button{
+    margin-top: 100px;
+    margin-left: 27px;
+}
+
+#scrap-button{
+    margin-top: 100px;
+    margin-left: 40px;
+}

@@ -1,0 +1,18 @@
+#profile-img{
+    margin-left: 12%;
+    margin-top: 2%; 
+    border-radius: 100px;    
+    float: left;    
+    border: 5px inset skyblue;    
+    }
+             
+    #profile-name{
+    margin-left: 30%;
+    margin-top: 2%;
+    padding-top: 3%;
+    }
+    
+    #state-msg{
+    margin-left: 32%;
+    padding-top: 3%;
+    }

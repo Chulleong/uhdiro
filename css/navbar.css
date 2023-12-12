@@ -1,8 +1,3 @@
-leftHeader ul li{
-    margin: 0px;
-    padding: 20px;
-}
-
 leftHeader nav {
     position : fixed;
     top: 0;
@@ -10,6 +5,7 @@ leftHeader nav {
     height: 100%;
     width:120px;
     font-weight: 800;
+    line-height: 0%;
     --text-color: #FFFFFF;
 }
 
@@ -20,38 +16,58 @@ leftHeader nav a {
 }
 
 leftHeader a:hover{
-    color: #9f9
+    color: #5f5
 }
   
 leftHeader .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(45deg, #A6CBF5, #AACCFF);
+    background: linear-gradient(290deg, #99CCFF, #5599ff);
     padding: 8px 12px;
 }
 
 #profile-icon{
-    margin-top: 20px;
+    margin-top: 50%;
     margin-left: 20px;
 }
 
+#profile-icon img{
+    margin-left: 15px;
+}
+
 #home-button{
-    margin-top: 130px;
-    margin-left: 60px;
+    margin-top: 100%;
+    margin-left: 20px;
+}
+
+#home-button img{
+    margin-left: 15px;
 }
 
 #plan-button{
-    margin-top: 100px;
-    margin-left: 27px;
+    margin-top: 50%;
+    margin-left: 20px;
+}
+
+#plan-button img{
+    margin-left: 15px;
 }
 
 #map-button{
-    margin-top: 100px;
-    margin-left: 27px;
+    margin-top: 50%;
+    margin-left: 20px;
+}
+
+#map-button img{
+    margin-left: 20px;
 }
 
 #scrap-button{
-    margin-top: 100px;
-    margin-left: 40px;
+    margin-top: 50%;
+    margin-left: 20px;
+}
+
+#scrap-button img{
+    margin-left: 15px;
 }

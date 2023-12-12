@@ -1,12 +1,3 @@
-//페이지 로드 이벤트
-window.addEventListener("load", ()=>{
-    const grid = new Isotope("section", {
-      itemSelector: "article",
-      columnWidth: "article",
-      transitionDuration: "0.5s"
-    })
-  })
-
   var container = document.getElementById('map');
   var options = {
     center: new kakao.maps.LatLng(36.3504119, 127.3845475), // 시작점

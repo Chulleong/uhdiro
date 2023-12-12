@@ -97,16 +97,6 @@ function add_dailyplan(day){
   newText.textContent = course[day];
   course[day]++;
   newPlan.appendChild(newText);
+  var newPlace = document.createElement('p');
   document.querySelector('.plan_day').querySelector('ul').querySelectorAll('ul')[day].appendChild(newPlan);
-
 }
-
-$(document).ready(function() {
-	var i=1; // 변수설정은 함수의 바깥에 설정!
-  $("button").click(function() {
-    
-    $("#plan_dat").append("<div class='daily_plan'>장소:일정:</div>");
-    
-    i++; // 함수 내 하단에 증가문 설정
-  });
-});

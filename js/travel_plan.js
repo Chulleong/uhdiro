@@ -85,6 +85,10 @@ function add_day() {
   document.querySelector('.plan_day').querySelector('ul').appendChild(newList);
 }
 
+function add_dailyplan(){
+  
+}
+
 $(document).ready(function() {
 	var i=1; // 변수설정은 함수의 바깥에 설정!
   $("button").click(function() {

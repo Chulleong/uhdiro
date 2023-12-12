@@ -18,11 +18,11 @@ h1 {
 }
 
 #slider {
-  margin-left: 270px !important;
-  margin-top: 40px !important;
+  left: 4%;
+  top: 20px;
   position: relative;
   overflow: hidden;
-  margin: 20px auto 0 auto;
+  margin: auto;
   border-radius: 4px;
 }
 
@@ -40,7 +40,7 @@ h1 {
   float: left;
   margin: 0;
   padding: 0;
-  width: 1050px;
+  width: 60%;
   height: 450px;
   background: #ccc;
   text-align: center;
@@ -93,7 +93,7 @@ a.control_next {
 
 .slider_option {
   position: relative;
-  margin: 10px auto;
+  margin: 30px auto;
   width: 160px;
   font-size: 18px;
 }

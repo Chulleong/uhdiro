@@ -62,9 +62,7 @@ for (var i = 0; i < positions.length; i ++) {
 }
 
 var day = 1;
-var course = 1;
-const p = document.createElement('p');
-const li = document.createElement('li');
+var course = [1];
 
 function clickshow(elem,ID) {
  var menu = document.getElementById(ID);
@@ -77,16 +75,30 @@ function clickshow(elem,ID) {
 }}
 
 function add_day() {
+  course.push(1)
   var newList = document.createElement('li');
   var newText = document.createElement('p');
   newText.textContent = day+'일차';
   day++;
   newList.appendChild(newText);
+  var newUL = document.createElement('ul');
+  newList.appendChild(newUL);
+  var newButton = document.createElement('button');
+  var newFunction = 'add_dailyplan('+(day-2)+')'
+  newButton.setAttribute('onclick',newFunction);
+  newButton.textContent = '일정 추가'
+  newList.appendChild(newButton);
   document.querySelector('.plan_day').querySelector('ul').appendChild(newList);
 }
 
-function add_dailyplan(){
-  
+function add_dailyplan(day){
+  var newPlan = document.createElement('li');
+  var newText = document.createElement('p');
+  newText.textContent = course[day];
+  course[day]++;
+  newPlan.appendChild(newText);
+  document.querySelector('.plan_day').querySelector('ul').querySelectorAll('ul')[day].appendChild(newPlan);
+
 }
 
 $(document).ready(function() {

@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 main{
-  margin-left: 150px;
+  margin-left: 9%;
   box-sizing: border-box;
 }
 
@@ -15,7 +15,7 @@ main{
 }
 
 .plan_choose{
-  margin-left: 20px;
+  background-color: beige;
 }
 
 .plan_list ul{
@@ -25,6 +25,7 @@ main{
 .plan_name {
   display: flex;
   align-items: center;
+  margin-inline-start: 40px;
 }
 
 .plan_name h1{

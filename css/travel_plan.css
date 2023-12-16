@@ -15,8 +15,9 @@ main{
 }
 
 .plan_choose{
-  width: 54%;
+  width: 53.5%;
   background-color: beige;
+  border-radius: 20px;
 }
 
 .plan_list ul{
@@ -36,4 +37,128 @@ main{
 .plan_name a{
   width: 30px;
   height: 20px;
+}
+
+.plan_day{
+  width: 53.5%;
+  background-color: #f7f7df;
+  border-radius: 20px;
+}
+
+.plan_day ul li p{
+  font-size: 20px;
+  font-weight: 1000;
+}
+
+.plan_day ul li ul{
+  list-style: none;
+}
+
+.plan_day ul li ul li p{
+  border-radius: 20px;
+  width:30px;
+  height: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.plan_day ul li ul li detail li{
+  margin-left: 50px;
+}
+
+.plan_day ul li ul li detail li place{
+  text-align: center;
+  float: left;
+}
+
+.plan_day ul li ul li detail li button{
+  margin-left: 10px;
+  text-align: center;
+}
+
+.plan_day ul li ul li detail li textarea{
+  margin-top: 10px;
+  width: 300px; 
+  text-align: left;
+
+}
+
+#day1 * * article{
+  background-color: #00ffff;
+  border-radius: 20px;
+  width:30px;
+  height: 30px;
+  position: absolute;
+}
+
+#day2 * * article{
+  background-color: #00bbff;
+  border-radius: 20px;
+  width:30px;
+  height: 30px;
+  position: absolute;
+}
+
+#day3 * * article{
+  background-color: #0088ff;
+  border-radius: 20px;
+  width:30px;
+  height: 30px;
+  position: absolute;
+}
+
+#day4 * * article{
+  background-color: #0055ff;
+  border-radius: 20px;
+  width:30px;
+  height: 30px;
+  position: absolute;
+}
+
+#day5 * * article{
+  background-color: #00ff00;
+  border-radius: 20px;
+  width:30px;
+  height: 30px;
+  position: absolute;
+}
+
+#day6 * * article{
+  background-color: #00cc55;
+  border-radius: 20px;
+  width:30px;
+  height: 30px;
+  position: absolute;
+}
+
+#day7 * * article{
+  background-color: #00aaaa;
+  border-radius: 20px;
+  width:30px;
+  height: 30px;
+  position: absolute;
+}
+
+#day8 * * article{
+  background-color: #ffcc00;
+  border-radius: 20px;
+  width:30px;
+  height: 30px;
+  position: absolute;
+}
+
+#day9 * * article{
+  background-color: #ff9900;
+  border-radius: 20px;
+  width:30px;
+  height: 30px;
+  position: absolute;
+}
+
+#day10 * * article{
+  background-color: #ff5500;
+  border-radius: 20px;
+  width:30px;
+  height: 30px;
+  position: absolute;
 }

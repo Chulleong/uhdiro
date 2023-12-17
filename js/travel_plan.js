@@ -5,8 +5,10 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
     };
 
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-var positions = [
-  [new kakao.maps.LatLng(33.450705, 126.570677)],
+var positions = [new kakao.maps.Marker({
+  map: map,
+  position: map.getCenter()
+}),
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -22,24 +24,24 @@ var positions = [
 for (var i = 0; i < positions.length; i ++) {
   for (var j = 0; j<positions[i].length; j++) {
     // 마커를 생성합니다
-    try{
       var marker = new kakao.maps.Marker({
-        map: map, // 마커를 표시할 지도
+        map: map,
         position: positions[i][j]
       });
-    } catch {}
   }
 }
 
 // 지도에 마커를 표시합니다
 marker.setMap(map);
 
+var markers = [
+
 kakao.maps.event.addListener(map, 'click', function(mouseEvent) {        
   // 클릭한 위도, 경도 정보를 가져옵니다 
   var latlng = mouseEvent.latLng; 
   
   // 마커 위치를 클릭한 위치로 옮깁니다
-  positions[0] = latlng;
+  markers[0].setPosition(latlng);
 
   // 지도 중심 위치 변경
   map.panTo(latlng);
@@ -132,7 +134,10 @@ function add_dailyplan(daynumber){
 }
 
 function choose_place(daynumber, coursenumber){
-  positions[daynumber][coursenumber] = map.getCenter();
+  positions[daynumber][coursenumber] = new kakao.maps.Marker({
+    map: map,
+    position: map.getCenter()
+  });
 
   var address = '위도: ' + positions[daynumber][coursenumber].getLng() + ', 경도: ' + positions[daynumber][coursenumber].getLat();
 
@@ -140,4 +145,12 @@ function choose_place(daynumber, coursenumber){
 
   let x = document.getElementsByClassName(classtag)[0];
   x.innerText = address;
+}
+
+function renamePlan(){
+
+}
+
+function addPlan(){
+
 }

@@ -6,6 +6,9 @@
     <title>어디로 웹서비스</title>
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/recommand-destination.css">
+    <script src="/js/sdk.js"></script>
+    <script defer src="../js/profile.js"></script>
     </head>
 <body>
     <div id="super-div">
@@ -22,10 +25,58 @@
         </leftHeader>
         <div>
             <img src="../img/profile_image.jpeg" alt="" width="14%" id="profile-img">
-            <h1 id="profile-name">Ye 님</h1>
-            <h4 id="state-msg">12월 31일 앨범 Vultures 많이 들어주세요.</h4>
+            <h1 id="profile-name">나핑프 님</h1>
+            <h4 id="state-msg">나는 곤쥬다. 세상에서 제일 예뿐 곤쥬.</h4>
         </div>
-        <div><hr style="width: 80%; margin-left: 14%; margin-top: 8%;"></div>
+        <main>
+            <div id="kakao-map">
+                <div id="map" style="width:480px;height:700px;"></div>
+            </div>
+            <section>
+                <h3 class="article-text">나의 기록</h3><hr style="width: 60%; height: 5px;border: none;background-color: #5599FF;margin-left: 0px;border-radius: 20px;">
+                <div class="middle-div">
+                    <article>
+                        <div class="articles" id="1">
+                            <img src="../img/test.png" alt="">
+                            <h2>경복궁</h2>
+                            <p>ㅁㅇㄴㄹㄴㅇㄹㄴㅁㅇㄹㄴㅁㅇㄹ</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="articles" id="2">
+                            <img src="../img/test.png" alt="">
+                            <h2>Eaque, quibusdam similique!</h2>
+                            <p>Aliquam, a sequi mollitia iusto ipsum quo?</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="articles" id="3">
+                            <img src="../img/test.png" alt="">
+                            <h2>Doloribus, </h2>
+                            <p>Consequuntur dolor a dicta laborum..</p>
+                        </div>
+                    </article>
+                </div>
+                <h3 class="article-text">나의 계획</h3><hr style="width: 60%; height: 5px;border: none;background-color: #5599FF;margin-left: 0px;border-radius: 20px;">
+                <div class="middle-div">
+                    <article>
+                        <div class="articles">
+                            <img src="../img/test.png" alt="">
+                            <h2>Ullam, qui autem!</h2>
+                            <p>At nostrum reiciendis deserunt aliquid culpa minus!</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="articles">
+                            <img src="../img/test.png" alt="">
+                            <h2>Dolorem, libero aspernatur.</h2>
+                            <p>Provident dicta a animi! Praesentium, molestiae natus.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        
     </div>
 </body>
 </html>

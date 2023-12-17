@@ -68,8 +68,8 @@ a.control_prev, a.control_next {
 
 a.control_prev > img, a.control_next > img {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 12px;
+  left: 12px;
   /* margin: auto; */
 }
 

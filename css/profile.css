@@ -1,7 +1,7 @@
 #profile-img{
     margin-left: 12%;
     margin-top: 2%; 
-    border-radius: 100px;    
+    border-radius: 500px;    
     float: left;    
     border: 5px inset skyblue;    
     }
@@ -15,4 +15,16 @@
     #state-msg{
     margin-left: 32%;
     padding-top: 3%;
+    }
+
+    #kakao-map{
+        position: absolute;
+        right: 0;
+        margin-right: 30px;
+        border: 1px solid lightgray;
+    }
+
+    .middle-div{
+        display: flex;
+        justify-content: flex-start;
     }

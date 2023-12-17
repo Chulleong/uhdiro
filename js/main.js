@@ -33,12 +33,12 @@
     y: "127.3433765"
   }]
 
-  const deajeon1 = [{
+  const jeonju = [{
     title: "전주 수목원",
     x: "35.8709862",
     y: "127.0549618",
-    startx: "35.8056455",
-    starty: "127.109305",
+    startx: "35.8203799",
+    starty: "127.1086669",
     level: 8
   },{
     title: "전주 한옥마을",
@@ -53,6 +53,30 @@
     x: "35.73232203",
     y: "127.1441541"
   }]
+
+  const gunsan = [
+    {
+      title: "철길 마을",
+      x: "35.9812506",
+      y: "126.7326194",
+      startx: "35.9812506",
+      starty: "126.7226194",
+      level: 6
+    },{
+      title: "홍굴이 해물짬뽕",
+      x: "35.9647244",
+      y: "126.7163921"
+    },
+    {
+      title: "일본 전통가옥",
+      x: "35.986103",
+      y: "126.706021"
+    },{
+      title: "이성당",
+      x: "35.9872026",
+      y: "126.7112691"
+    }
+  ]
 
   middleDiv.forEach(element => {
     element.addEventListener("click", () => {
@@ -72,55 +96,34 @@
         options.center = new kakao.maps.LatLng(deajeon[0].startx, deajeon[0].starty)
         options.level = deajeon[0].level
       }else if(element.id == "2"){
-        for(let i = 0; i<deajeon1.length; i++){
+        for(let i = 0; i<jeonju.length; i++){
           positions.push({
-            title: deajeon1[i].title,
-            latlng: new kakao.maps.LatLng(deajeon1[i].x, deajeon1[i].y)
+            title: jeonju[i].title,
+            latlng: new kakao.maps.LatLng(jeonju[i].x, jeonju[i].y)
           })
           linePath.push(
-            new kakao.maps.LatLng(deajeon1[i].x, deajeon1[i].y)
+            new kakao.maps.LatLng(jeonju[i].x, jeonju[i].y)
           )
         }
-        options.center = new kakao.maps.LatLng(deajeon1[0].startx, deajeon1[0].starty)
-        options.level = deajeon1[0].level
+        options.center = new kakao.maps.LatLng(jeonju[0].startx, jeonju[0].starty)
+        options.level = jeonju[0].level
+      }else if(element.id == "3"){
+        for(let i = 0; i<gunsan.length; i++){
+          positions.push({
+            title: gunsan[i].title,
+            latlng: new kakao.maps.LatLng(gunsan[i].x, gunsan[i].y)
+          })
+          linePath.push(
+            new kakao.maps.LatLng(gunsan[i].x, gunsan[i].y)
+          )
+        }
+        options.center = new kakao.maps.LatLng(gunsan[0].startx, gunsan[0].starty)
+        options.level = gunsan[0].level
       }
 
       draw()
     })
   });
-
-  let positions = []
-
-  let linePath = []
-
-
-
-
-//   var positions = [
-//     {
-//         title: '충남대', 
-//         latlng: new kakao.maps.LatLng(36.3688253, 127.3468684)
-//     },
-//     {
-//         title: '한화이글스', 
-//         latlng: new kakao.maps.LatLng(36.3172026, 127.4285703)
-//     },
-//     {
-//         title: '텃밭', 
-//         latlng: new kakao.maps.LatLng(33.450879, 126.569940)
-//     },
-//     {
-//         title: '근린공원',
-//         latlng: new kakao.maps.LatLng(33.451393, 126.570738)
-//     }
-// ];
-
-// var linePath = [
-//   new kakao.maps.LatLng(36.3688253, 127.3468684),
-//   new kakao.maps.LatLng(36.3172026, 127.4285703),
-// ];
-
-
 
 // 마커 이미지의 이미지 주소입니다
 var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png"; 

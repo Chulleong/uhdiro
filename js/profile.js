@@ -16,6 +16,9 @@ var plan = [
   {
       title: '여수', 
       latlng: new kakao.maps.LatLng(34.7603737, 127.6622221)
+  },{
+      title: '서울',
+      latlng: new kakao.maps.LatLng(37.5518911, 126.9917937)
   }];
 
 

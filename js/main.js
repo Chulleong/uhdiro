@@ -78,6 +78,105 @@
     }
   ]
 
+  const incheon = [
+    {
+      title: "수도국산 달동네 박물관",
+      x: "37.4779185",
+      y: "126.6392528",
+      startx: "37.4779185",
+      starty: "126.6392528",
+      level: "8"
+    },
+    {
+      title: "신포 국제시장",
+      x: "37.4713875",
+      y: "126.6272078"
+    },
+    {
+      title: "개항장거리",
+      x: "37.4742014",
+      y: "126.6213755"
+    }
+    ,
+    {
+      title: "인천 차이나타운",
+      x: "37.475589",
+      y: "126.6178849"
+    }
+    ,
+    {
+      title: "월미도",
+      x: "37.4754003",
+      y: "126.5978148"
+    }
+  ]
+  
+  const jeju = [
+    {
+      title: "제주 국제공항",
+      x: "33.5070537",
+      y: "126.492776",
+      startx: "33.5070537",
+      starty: "126.492776",
+      level: "8"
+    },
+    {
+      title: "디 앤 디파트먼트",
+      x: "33.5176855",
+      y: "126.5234639"
+    }
+    ,
+    {
+      title: "세화 해변",
+      x: "33.5254465",
+      y: "126.8601732"
+    }
+    ,
+    {
+      title: "빛의 벙커",
+      x: "33.4398545",
+      y: "126.8991383"
+    },
+    {
+      title: "신풍 신천 바다 목장",
+      x: "33.3567015",
+      y: "126.8682182"
+    }
+  ]
+
+  const andong = [
+    {
+      title: "하회 마을",
+      x: "36.5389131",
+      y: "128.5181474",
+      startx: "36.5389131",
+      starty: "128.5181474",
+      level: "8"
+    },
+    {
+      title: "그라스원",
+      x: "36.5586947",
+      y: "128.7310527"
+    }
+    ,
+    {
+      title: "안동 호호재",
+      x: "36.5837754",
+      y: "128.7781445"
+    }
+    ,
+    {
+      title: "시골 찜닭",
+      x: "36.5655773",
+      y: "128.7273574"
+    },
+    {
+      title: "월영교",
+      x: "36.5766579",
+      y: "128.7608873"
+    }
+  ]
+
   middleDiv.forEach(element => {
     element.addEventListener("click", () => {
       positions = []
@@ -119,6 +218,42 @@
         }
         options.center = new kakao.maps.LatLng(gunsan[0].startx, gunsan[0].starty)
         options.level = gunsan[0].level
+      }else if(element.id == "4"){
+        for(let i = 0; i<incheon.length; i++){
+          positions.push({
+            title: incheon[i].title,
+            latlng: new kakao.maps.LatLng(incheon[i].x, incheon[i].y)
+          })
+          linePath.push(
+            new kakao.maps.LatLng(incheon[i].x, incheon[i].y)
+          )
+        }
+        options.center = new kakao.maps.LatLng(incheon[0].startx, incheon[0].starty)
+        options.level = incheon[0].level
+      }else if(element.id == "5"){
+        for(let i = 0; i<jeju.length; i++){
+          positions.push({
+            title: jeju[i].title,
+            latlng: new kakao.maps.LatLng(jeju[i].x, jeju[i].y)
+          })
+          linePath.push(
+            new kakao.maps.LatLng(jeju[i].x, jeju[i].y)
+          )
+        }
+        options.center = new kakao.maps.LatLng(jeju[0].startx, jeju[0].starty)
+        options.level = jeju[0].level
+      }else if(element.id == "6"){
+        for(let i = 0; i<andong.length; i++){
+          positions.push({
+            title: andong[i].title,
+            latlng: new kakao.maps.LatLng(andong[i].x, andong[i].y)
+          })
+          linePath.push(
+            new kakao.maps.LatLng(andong[i].x, andong[i].y)
+          )
+        }
+        options.center = new kakao.maps.LatLng(andong[0].startx, andong[0].starty)
+        options.level = andong[0].level
       }
 
       draw()

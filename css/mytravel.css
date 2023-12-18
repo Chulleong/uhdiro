@@ -16,7 +16,7 @@ main{
 
 .plan_choose{
   width: 53.5%;
-  background-color: beige;
+  background-color: #f1f1d9;
   border-radius: 20px;
 }
 
@@ -43,6 +43,18 @@ main{
   width: 53.5%;
   background-color: #f7f7df;
   border-radius: 20px;
+}
+
+.plan_day textarea{
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 96.5%;
+  height: 46px;
+  text-align: center;
+  border-color: #0088ff;
+  border-width: 3px;
+  vertical-align: 50%;
 }
 
 .plan_day ul li p{

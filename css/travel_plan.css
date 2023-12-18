@@ -69,18 +69,30 @@ main{
 .plan_day ul li ul li detail li place{
   text-align: center;
   float: left;
+  margin-right: 10px;
 }
 
-.plan_day ul li ul li detail li button{
-  margin-left: 10px;
+.plan_day ul li ul li detail li button {
   text-align: center;
 }
 
 .plan_day ul li ul li detail li textarea{
   margin-top: 10px;
-  width: 300px; 
+  width: 80%;
+  height: 60px;
   text-align: left;
+  margin-bottom: 10px;
+}
 
+.plan_day ul li ul li detail li button{
+  text-align: center;
+}
+
+.plan_day ul li ul li detail li img{
+  float: left;
+  padding: 1%;
+  width: 30%;
+  height: 20%;
 }
 
 #day1 * * article{

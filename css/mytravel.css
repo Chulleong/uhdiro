@@ -16,7 +16,7 @@ main{
 
 .plan_choose{
   width: 53.5%;
-  background-color: beige;
+  background-color: #f1f1d9;
   border-radius: 20px;
 }
 
@@ -45,6 +45,18 @@ main{
   border-radius: 20px;
 }
 
+.plan_day textarea{
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 96.5%;
+  height: 46px;
+  text-align: center;
+  border-color: #0088ff;
+  border-width: 3px;
+  vertical-align: 50%;
+}
+
 .plan_day ul li p{
   font-size: 20px;
   font-weight: 1000;
@@ -69,18 +81,30 @@ main{
 .plan_day ul li ul li detail li place{
   text-align: center;
   float: left;
+  margin-right: 10px;
 }
 
-.plan_day ul li ul li detail li button{
-  margin-left: 10px;
+.plan_day ul li ul li detail li button {
   text-align: center;
 }
 
 .plan_day ul li ul li detail li textarea{
   margin-top: 10px;
-  width: 300px; 
+  width: 80%;
+  height: 60px;
   text-align: left;
+  margin-bottom: 10px;
+}
 
+.plan_day ul li ul li detail li button{
+  text-align: center;
+}
+
+.plan_day ul li ul li detail li img{
+  float: left;
+  padding: 1%;
+  width: 30%;
+  height: 20%;
 }
 
 #day1 * * article{

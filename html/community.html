@@ -6,6 +6,7 @@
     <title>어디로 웹서비스</title>
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/community.css">
+    <script src="../js/community.js"></script>
 </head>
 
 <body>
@@ -15,24 +16,22 @@
                 <nav>
                     <div id="profile-icon"><a href="../html/profile.html"><img src="../img/profile.png" width="70px" height="70px"><p style="text-align: center;">내 정보</p></a></div>
                     <div id="home-button"><a href="../index.html"><img src="../img/home.png" width="70px" height="70px"><p style="text-align: center;">홈</p></a></div>
-                    <div id="plan-button"><a href="../html/travel_plan.html"><img src="../img/travel_plan.png" width="70px" height="70px"><p style="text-align: center;">여행 계획</p></a></div>
-                    <div id="map-button"><a href="../html/travel_record.html"><img src="../img/travel_record.png" width="70px" height="70px"><p style="text-align: center;">여행 지도</p></a></div>
+                    <div id="plan-button"><a href="../html/mytravel.html"><img src="../img/mytravel.png" width="70px" height="70px"><p style="text-align: center;">나의 여행</p></a></div>
+                    <div id="map-button"><a href="../html/community.html"><img src="../img/community.png" width="70px" height="70px"><p style="text-align: center;">커뮤니티</p></a></div>
                     <div id="scrap-button"><a href="../html/scrap.html"><img src="../img/travel_scrap.png" width="70px" height="70px"><p style="text-align: center;">스크랩</p></a></div>
-                    <div id="profile-icon"><a href=""><img src="../img/profile.png" width="100px" height="100px"></a></div>
-                    <div id="home-button"><a href="../html/main.html">홈</a></div>
-                    <div id="plan-button"><a href="../html/travel-plan.html">여행 계획</a></div>
-                    <div id="map-button"><a href="../html/travel_record.html">여행 지도</a></div>
-                    <div id="scrap-button"><a href="">스크랩</a></div>
-                    <div id="scrap-button"><a href="../html/scrap.html">스크랩</a></div>
                 </nav>
             </nav> 
         </leftHeader>
         <main>
+            <div id="hashTagSearch">
+                <label for="searchInput">해시태그 검색: </label>
+                <input type="text" id="searchInput" onchange="filterByTags()">
+            </div>
             <section>
                 <h3 class="article-text">커뮤니티</h3><hr style="width: 98%; height: 5px;border: none;background-color: #5599FF;margin-left: 0px;border-radius: 20px;">
                 <div class="middle-div">
                     <article>
-                        <div class="articles" id="1">
+                        <div class="articles" id = "1">
                             <img src="../img/bomun.jpeg" alt="">
                             <h2>대전시 유명스팟</h2>
                             <p>보문산 정상에서 보는 멋진 야경과 함께 즐기는 성심당 명란바게트</p>

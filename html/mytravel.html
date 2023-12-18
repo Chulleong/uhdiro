@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>어디로 웹서비스</title>
     <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/travel_plan.css">]
+    <link rel="stylesheet" href="../css/mytravel.css">]
     <script src="../js/sdk.js"></script>
-    <script defer src="../js/travel_plan.js"></script>
+    <script defer src="../js/mytravel.js"></script>
 </head>
 
 <body>
@@ -16,10 +16,10 @@
             <nav class="navbar">
                 <nav>
                     <div id="profile-icon"><a href="../html/profile.html"><img src="../img/profile.png" width="70px" height="70px"><p style="text-align: center;">내 정보</p></a></div>
-                    <div id="home-button"><a href="../html/main.html"><img src="../img/home.png" width="70px" height="70px"><p style="text-align: center;">홈</p></a></div>
-                    <div id="plan-button"><a href="../html/travel_plan.html"><img src="../img/travel_plan.png" width="70px" height="70px"><p style="text-align: center;">여행 계획</p></a></div>
-                    <div id="map-button"><a href="../html/travel_record.html"><img src="../img/travel_record.png" width="70px" height="70px"><p style="text-align: center;">여행 지도</p></a></div>
-                    <div id="scrap-button"><a href="../html/travel_scrap.html"><img src="../img/travel_scrap.png" width="70px" height="70px"><p style="text-align: center;">스크랩</p></a></div>
+                    <div id="home-button"><a href="../index.html"><img src="../img/home.png" width="70px" height="70px"><p style="text-align: center;">홈</p></a></div>
+                    <div id="plan-button"><a href="../html/mytravel.html"><img src="../img/mytravel.png" width="70px" height="70px"><p style="text-align: center;">나의 여행</p></a></div>
+                    <div id="map-button"><a href="../html/community.html"><img src="../img/community.png" width="70px" height="70px"><p style="text-align: center;">커뮤니티</p></a></div>
+                    <div id="scrap-button"><a href="../html/scrap.html"><img src="../img/travel_scrap.png" width="70px" height="70px"><p style="text-align: center;">스크랩</p></a></div>
                 </nav>
             </nav> 
         </leftHeader>
@@ -31,13 +31,13 @@
         <div class="plan_choose">
             <div class="plan_name">
                 <a href="#" class="plan_list_oc" onclick="clickshow(this,'plan_list')"><img src="../img/bars-solid.svg"></a>
-                <h1 id="list1">나의 여행 계획</h1>
+                <h1 id="list1">제주</h1>
                 <a href="#" class="plan_rename" onclick="renamePlan()"><img src="../img/pen-solid.svg"></a>
                 <a href="#" class="plan_add" onclick="addPlan()"><img src="../img/plus-solid.svg"></a>
             </div>
             <div id="plan_list" style="display: none;">
                 <ul>
-                    <li><h3>나의 여행 계획</h3></li>
+                    <li><h3>제주</h3></li>
                     <li><h3>서울</h3></li>
                     <li><h3>대구</h3></li>
                     <li><h3>부산</h3></li>
@@ -46,6 +46,7 @@
         </div>
         <hr style="width: 53.5%; height: 7px;border: none;background-color: #5599FF;margin-left: 0px;border-radius: 20px;">
         <div class="plan_day">
+            <textarea placeholder="여행에 대한 소개를 적어주세요!" autofocus></textarea>
             <ul>
             </ul>
         </div>

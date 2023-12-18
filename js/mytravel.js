@@ -6,8 +6,8 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 var markers = [new kakao.maps.Marker({
-  map: map,
-  position: map.getCenter()
+  map: null,
+  position: new kakao.maps.LatLng(0, 0)
 }), [], [], [], [], [], [], [], [], [], []
 ];
 
@@ -15,7 +15,7 @@ for(var i=1;i<11;i++){
   for(var j=0;j<10;j++){
     markers[i][j] = new kakao.maps.Marker({
       map: null,
-      position: null
+      position: new kakao.maps.LatLng(0,0)
     });
   }
 }
@@ -62,9 +62,6 @@ kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
   // 클릭한 위도, 경도 정보를 가져옵니다 
   var latlng = mouseEvent.latLng; 
   
-  // 마커 위치를 클릭한 위치로 옮깁니다
-  markers[0].setPosition(latlng);
-
   // 지도 중심 위치 변경
   map.panTo(latlng);
 });
@@ -192,7 +189,7 @@ function add_dailyplan(daynumber){
   var newButton2 = document.createElement('button');
   var newFunction2 = 'add_file('+daynumber+','+course[daynumber]+')'
   newButton2.setAttribute('onclick',newFunction2);
-  newButton2.textContent = '파일 추가'
+  newButton2.textContent = '사진 추가'
   newDetails4.appendChild(newButton2);
 
   newDetails.appendChild(newDetails1);
